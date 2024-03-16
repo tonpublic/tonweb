@@ -1,0 +1,162 @@
+repo_name: tonpublic/tonweb
+report_id: c3f0b03b6cb08d15c56fdcfd70c02616
+version: 0.1
+repo_type: Public
+timestamp: '2024-03-16T22:23:58+00:00'
+requested_by: tolya-yanot
+provider: github
+branch: master
+detected_tools_count: 11
+tools:
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/tonpublic/tonweb
+  detection_source: Repo Metadata
+- name: Node.js
+  description: A platform built on Chrome's JavaScript runtime for easily building
+    fast, scalable network applications
+  website_url: http://nodejs.org/
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/1011/n1JRsFeB_400x400.png
+  detection_source_url: https://github.com/tonpublic/tonweb/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: tolya-yanot
+  last_updated_on: 2020-03-09 22:04:42.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/tonpublic/tonweb
+  detection_source: Repo Metadata
+- name: Webpack
+  description: A bundler for javascript and friends
+  website_url: http://webpack.js.org
+  version: 5.70.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: JS Build Tools / JS Task Runners
+  image_url: https://img.stackshare.io/service/1682/IMG_4636.PNG
+  detection_source_url: https://github.com/tonpublic/tonweb/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: tolya-yanot
+  last_updated_on: 2022-03-04 17:48:47.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/tonpublic/tonweb/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: tolya-yanot
+  last_updated_on: 2020-03-09 22:04:42.000000000 Z
+- name: Buffer
+  description: The easiest way to schedule tweets, Facebook posts and more
+  website_url: https://bufferapp.com/
+  open_source: false
+  hosted_saas: true
+  category: Support, Sales, and Marketing
+  sub_category: Social Media Tools
+  image_url: https://img.stackshare.io/service/825/hnc3q-7x.jpg
+  detection_source_url: https://github.com/tonpublic/tonweb/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: tolya-yanot
+  last_updated_on: 2022-03-04 17:48:47.000000000 Z
+- name: Shell
+  description: A shell is a text-based terminal, used for manipulating programs and
+    files. Shell scripts typically manage program execution.
+  website_url: https://en.wikipedia.org/wiki/Shell_script
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
+  detection_source_url: https://github.com/tonpublic/tonweb
+  detection_source: Repo Metadata
+- name: bn.js
+  description: Big number implementation in pure javascript
+  package_url: https://www.npmjs.com/bn.js
+  version: 5.1.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16585/default_f7592cb347fae67ce7c7f221ddd5fd2cb0afc28f.png
+  detection_source_url: https://github.com/tonpublic/tonweb/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: tolya-yanot
+  last_updated_on: 2022-02-01 17:27:29.000000000 Z
+- name: node-fetch
+  description: A light-weight module that brings window.fetch to node.js
+  package_url: https://www.npmjs.com/node-fetch
+  version: 1.7.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15978/default_f49d4c116f8ea0155f4d92673b084378bba02760.png
+  detection_source_url: https://github.com/tonpublic/tonweb/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: tolya-yanot
+  last_updated_on: 2022-03-04 17:48:47.000000000 Z
+  vulnerabilities:
+  - name: node-fetch forwards secure headers to untrusted sites
+    cve_id: CVE-2022-0235
+    cve_url: https://github.com/advisories/GHSA-r683-j2x4-v87g
+    detected_date: Jan 22
+    severity: high
+    first_patched: 2.6.7
+  - name: The `size` option isn't honored after following a redirect in node-fetch
+    cve_id: CVE-2020-15168
+    cve_url: https://github.com/advisories/GHSA-w7rc-rwvf-8q5r
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.6.1
+- name: tweetnacl
+  description: Port of TweetNaCl cryptographic library to JavaScript
+  package_url: https://www.npmjs.com/tweetnacl
+  version: 1.0.3
+  license: Unlicense
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17410/default_bdd3cbd2ffd904a2fe09048437badf6984450361.png
+  detection_source_url: https://github.com/tonpublic/tonweb/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: tolya-yanot
+  last_updated_on: 2022-02-01 17:27:29.000000000 Z
+- name: webpack-cli
+  description: CLI for webpack &amp; friends
+  package_url: https://www.npmjs.com/webpack-cli
+  version: 3.3.12
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15826/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
+  detection_source_url: https://github.com/tonpublic/tonweb/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: tolya-yanot
+  last_updated_on: 2022-03-04 17:48:47.000000000 Z
